@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+		<style>
+		 #jerry:{
+		 	background-color: blue
+		 }
+		</style>
+
+		<title>My Fiori Exercise</title>
+
+		<script
+			id="sap-ui-bootstrap"
+			src="resources/sap-ui-core.js"
+			data-sap-ui-theme="sap_bluecrystal"
+			data-sap-ui-libs="sap.m, sap.ui.layout"
+			data-sap-ui-xx-bindingSyntax="complex">
+		</script>
+		<!--  
+		<script src="./scn_exercise/util/snowAnimation.js">
+		</script>
+!-->
+		<script>
+		sap.ui.localResources("scn_exercise");
+		
+		new sap.m.Shell({
+			app : new sap.ui.core.ComponentContainer({
+				name : "scn_exercise", height :"85%"
+			}) 
+			/*new sap.ui.core.ComponentContainer({
+				name : "scn_exercise"*/
+		}).placeAt("content");
+
+		</script>
+
+	</head>
+	<body class="sapUiBody" id="content">
+	<!--  Jerry 2017-05-20 17:11PM the below div will be hidden in rendered html 
+	<div id="jerry">Hello</div> -->
+	</body>
+</html>

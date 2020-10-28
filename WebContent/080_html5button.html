@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src= "resources/sap-ui-core.js" 
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.ui.commons,sap.ui.table"
+				data-sap-ui-theme="sap_bluecrystal">
+		</script>
+<script>
+
+sap.ui.localResources("buttontutorial");
+
+var oView = sap.ui.view({
+		viewName : "buttontutorial.view.simple",
+		type : sap.ui.core.mvc.ViewType.XML,
+		viewData : undefined
+	});
+	
+oView.placeAt("content");
+	
+</script>
+<meta charset="UTF-8">
+<title>Image loaded by Proxy Pattern</title>
+</head>
+<body>
+<div id = "content">
+</div>
+</body>
+</html>
